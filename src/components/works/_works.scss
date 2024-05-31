@@ -1,0 +1,64 @@
+/*start work-section*/
+.works-section {
+  text-align: center;
+  @media (min-width: 992px) {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -270px;
+      left: 0;
+      border-style: solid;
+      border-width: 24rem 0vw 22rem 150vw;
+      border-color: transparent transparent transparent #f5fcff;
+      z-index: -1;
+      height: 5%;
+    }
+  }
+  .why-part {
+    h3 {
+      margin: 4rem 0;
+    }
+    .why-content {
+      display: flex;
+      gap: 1rem;
+      div {
+        flex-basis: calc(100% / 3);
+        display: grid;
+        gap: 15px;
+        line-height: 1.6;
+        justify-items: center;
+        font-size: small;
+
+        @media (min-width: 992px) {
+          padding: 0 79px;
+        }
+        img {
+          max-width: 50%;
+        }
+      }
+    }
+    .Works-we-do {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      div {
+        img {
+          max-width: 100%;
+        }
+        h3 {
+          color: #4b2a63;
+        }
+      }
+    }
+    .details {
+      padding: 0 50px;
+      color: #808080d4;
+      line-height: 1.6;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}
+/*end work-section*/

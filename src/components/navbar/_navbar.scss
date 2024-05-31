@@ -1,0 +1,65 @@
+/*start style for navbar*/
+header {
+  background-color: #f8f8f8;
+  .join-nav {
+    padding: 0.5rem 0 1.5rem;
+    position: relative;
+
+    .logo-join {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      svg {
+        font-size: xxx-large;
+        @media (min-width: 991px) {
+          display: none;
+        }
+      }
+
+      div:first-child {
+        img {
+          width: 75%;
+        }
+      }
+      div:last-child {
+        display: flex;
+        gap: 4rem;
+        font-weight: 700;
+        font-size: small;
+        @media (max-width: 991px) {
+          margin: 3rem 0;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1rem;
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+        }
+        p {
+          color: #9c27b0;
+        }
+      }
+    }
+    nav {
+      margin-top: 1.5rem;
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        text-transform: capitalize;
+        @media (max-width: 991px) {
+          flex-direction: column;
+          gap: 1.5rem;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+.menu-small-device {
+  @media (max-width: 991px) {
+    display: none !important;
+  }
+}
+/*end style for navbar*/
